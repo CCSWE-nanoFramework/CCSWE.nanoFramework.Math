@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "CCSWE.nanoFramework.Math", "CCSWE.nanoFramework.Math\CCSWE.nanoFramework.Math.nfproj", "{949FCF3B-0F2B-45ED-91B4-50319A795B7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{05A92BAC-02FF-45F7-973F-4F2BE485B7EB}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GitHub", "GitHub", "{1353EF8F-C4FF-412F-BC43-069572E1F830}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build-solution.yml = .github\workflows\build-solution.yml
+		.github\config.yml = .github\config.yml
+		.github\workflows\update-dependencies.yml = .github\workflows\update-dependencies.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{290C3C29-7FB0-46F7-93D2-CEECC333A57E}"
+	ProjectSection(SolutionItems) = preProject
+		CCSWE.nanoFramework.Math.nuspec = CCSWE.nanoFramework.Math.nuspec
+		Directory.Build.props = Directory.Build.props
+		nuget.config = nuget.config
+		version.json = version.json
+	EndProjectSection
+EndProject
+Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "CCSWE.nanoFramework.Math.Benchmarks", "CCSWE.nanoFramework.Math.Benchmarks\CCSWE.nanoFramework.Math.Benchmarks.nfproj", "{1B385C5B-1219-442F-B896-F925D2BA489C}"
+EndProject
+Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "CCSWE.nanoFramework.Math.UnitTests", "CCSWE.nanoFramework.Math.UnitTests\CCSWE.nanoFramework.Math.UnitTests.nfproj", "{240FBB40-ACD7-475A-9DD1-DE6AC1EB0541}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{949FCF3B-0F2B-45ED-91B4-50319A795B7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{949FCF3B-0F2B-45ED-91B4-50319A795B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{949FCF3B-0F2B-45ED-91B4-50319A795B7B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{949FCF3B-0F2B-45ED-91B4-50319A795B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{949FCF3B-0F2B-45ED-91B4-50319A795B7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{949FCF3B-0F2B-45ED-91B4-50319A795B7B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1B385C5B-1219-442F-B896-F925D2BA489C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B385C5B-1219-442F-B896-F925D2BA489C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B385C5B-1219-442F-B896-F925D2BA489C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1B385C5B-1219-442F-B896-F925D2BA489C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B385C5B-1219-442F-B896-F925D2BA489C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B385C5B-1219-442F-B896-F925D2BA489C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{240FBB40-ACD7-475A-9DD1-DE6AC1EB0541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{240FBB40-ACD7-475A-9DD1-DE6AC1EB0541}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{240FBB40-ACD7-475A-9DD1-DE6AC1EB0541}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{240FBB40-ACD7-475A-9DD1-DE6AC1EB0541}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{240FBB40-ACD7-475A-9DD1-DE6AC1EB0541}.Release|Any CPU.Build.0 = Release|Any CPU
+		{240FBB40-ACD7-475A-9DD1-DE6AC1EB0541}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A1ADA67-56A2-493D-86B2-87EFA5EDAEEF}
+	EndGlobalSection
+EndGlobal
