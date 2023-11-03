@@ -1,19 +1,23 @@
-using System.Diagnostics;
-using System.Threading;
+using nanoFramework.Benchmark;
 
-namespace CCSWE.nanoFramework.Math.Benchmarks
+namespace CCSWE.nanoFramework.Benchmarks
 {
     public class Program
     {
         public static void Main()
         {
-            Debug.WriteLine("Hello from nanoFramework!");
+#if DEBUG
+            Console.WriteLine("Benchmarks should be run in a release build.");
+            Debugger.Break();
+            return;
+#endif
 
-            Thread.Sleep(Timeout.Infinite);
+            BenchmarkRunner.RunClass(typeof(AbsBenchmarks));
+            BenchmarkRunner.RunClass(typeof(ClampBenchmarks));
+            BenchmarkRunner.RunClass(typeof(MaxBenchmarks));
+            BenchmarkRunner.RunClass(typeof(MinBenchmarks));
 
-            // Browse our samples repository: https://github.com/nanoframework/samples
-            // Check our documentation online: https://docs.nanoframework.net/
-            // Join our lively Discord community: https://discord.gg/gCyBu8T
+            BenchmarkRunner.RunClass(typeof(BitConverterBenchmarks));
         }
     }
 }

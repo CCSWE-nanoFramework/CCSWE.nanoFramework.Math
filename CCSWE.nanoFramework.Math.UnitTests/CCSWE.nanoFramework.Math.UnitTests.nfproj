@@ -15,7 +15,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <FileAlignment>512</FileAlignment>
-    <RootNamespace>CCSWE.nanoFramework.Math.UnitTests</RootNamespace>
+    <RootNamespace>CCSWE.nanoFramework.UnitTests</RootNamespace>
     <AssemblyName>NFUnitTest</AssemblyName>
     <IsCodedUITest>False</IsCodedUITest>
     <IsTestProject>true</IsTestProject>
@@ -27,7 +27,14 @@
     <RunSettingsFilePath>$(MSBuildProjectDirectory)\nano.runsettings</RunSettingsFilePath>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="FastMath_Max_Tests.cs" />
+    <Compile Include="FastMath_Clamp_Tests.cs" />
+    <Compile Include="FastMath_Abs_Tests.cs" />
+    <Compile Include="Math_Abs_Tests.cs" />
+    <Compile Include="Math_Clamp_Tests.cs" />
+    <Compile Include="FastMath_Min_Tests.cs" />
+    <Compile Include="Math_Max_Tests.cs" />
+    <Compile Include="Math_Min_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
