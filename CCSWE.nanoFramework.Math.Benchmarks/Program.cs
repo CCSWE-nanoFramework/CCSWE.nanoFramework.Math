@@ -1,3 +1,4 @@
+using System;
 using nanoFramework.Benchmark;
 
 namespace CCSWE.nanoFramework.Benchmarks
@@ -11,6 +12,7 @@ namespace CCSWE.nanoFramework.Benchmarks
             Debugger.Break();
             return;
 #endif
+            Console.WriteLine("Running benchmarks...");
 
             BenchmarkRunner.RunClass(typeof(AbsBenchmarks));
             BenchmarkRunner.RunClass(typeof(ClampBenchmarks));
