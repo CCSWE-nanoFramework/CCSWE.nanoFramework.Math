@@ -1,4 +1,6 @@
-﻿namespace CCSWE.nanoFramework
+﻿using System;
+
+namespace CCSWE.nanoFramework
 {
     internal static partial class Math
     {
@@ -9,6 +11,7 @@
         /// <param name="val2">The second of two double-precision floating-point numbers to compare.</param>
         /// <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is smaller. If <paramref name="val1" />, <paramref name="val2" />, or both <paramref name="val1" /> and <paramref name="val2" /> are equal to <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NaN" /> is returned.</returns>
         //[MethodImpl(MethodImplOptions.AggressiveInlining)]
+        [Obsolete("** This is slower than System.Math **")]
         public static double Min(double val1, double val2)
         {
             // TODO: The last part of this spec is not currently possible to implement in managed code
@@ -41,6 +44,7 @@
         /// <param name="val2">The second of two single-precision floating-point numbers to compare.</param>
         /// <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is smaller. If <paramref name="val1" />, <paramref name="val2" />, or both <paramref name="val1" /> and <paramref name="val2" /> are equal to <see cref="F:System.Single.NaN" />, <see cref="F:System.Single.NaN" /> is returned.</returns>
         //[MethodImpl(MethodImplOptions.AggressiveInlining)]
+        [Obsolete("** This is slower than System.Math **")]
         public static float Min(float val1, float val2)
         {
             // TODO: The last part of this spec is not currently possible to implement in managed code
@@ -71,6 +75,7 @@
         /// <param name="val2">The second of two 32-bit signed integers to compare.</param>
         /// <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is smaller.</returns>
         // TODO: This is a minor improvement and could be copied over to System.Math to replace the native call
+        [Obsolete("** This is slower than System.Math **")]
         public static int Min(int val1, int val2)
         {
             return (val1 <= val2) ? val1 : val2;
