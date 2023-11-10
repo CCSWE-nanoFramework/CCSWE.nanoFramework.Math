@@ -16,8 +16,8 @@ namespace CCSWE.nanoFramework.Benchmarks
 
             BenchmarkRunner.RunClass(typeof(AbsBenchmarks));
             BenchmarkRunner.RunClass(typeof(ClampBenchmarks));
-            BenchmarkRunner.RunClass(typeof(MaxBenchmarks));
-            BenchmarkRunner.RunClass(typeof(MinBenchmarks));
+            //BenchmarkRunner.RunClass(typeof(MaxBenchmarks));
+            //BenchmarkRunner.RunClass(typeof(MinBenchmarks));
 
             BenchmarkRunner.RunClass(typeof(BitConverterBenchmarks));
         }
