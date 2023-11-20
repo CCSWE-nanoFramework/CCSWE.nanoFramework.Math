@@ -10,14 +10,13 @@ namespace CCSWE.nanoFramework.Benchmarks
 #if DEBUG
             Console.WriteLine("Benchmarks should be run in a release build.");
             Debugger.Break();
-            return;
 #endif
             Console.WriteLine("Running benchmarks...");
 
             BenchmarkRunner.RunClass(typeof(AbsBenchmarks));
             BenchmarkRunner.RunClass(typeof(ClampBenchmarks));
-            //BenchmarkRunner.RunClass(typeof(MaxBenchmarks));
-            //BenchmarkRunner.RunClass(typeof(MinBenchmarks));
+            BenchmarkRunner.RunClass(typeof(MaxBenchmarks));
+            BenchmarkRunner.RunClass(typeof(MinBenchmarks));
 
             BenchmarkRunner.RunClass(typeof(BitConverterBenchmarks));
         }
