@@ -23,7 +23,7 @@ namespace CCSWE.nanoFramework
         //[MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static double Clamp(double value, double min, double max)
         {
-            if (min > max)
+            if (max < min)
             {
                 throw new ArgumentException();
             }
@@ -59,7 +59,7 @@ namespace CCSWE.nanoFramework
         //[MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static float Clamp(float value, float min, float max)
         {
-            if (min > max)
+            if (max < min)
             {
                 throw new ArgumentException();
             }
